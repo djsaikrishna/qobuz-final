@@ -29,20 +29,20 @@ QOBUZ_DB = os.path.join(CONFIG_PATH, "qobuz_dl.db")
 def _reset_config(config_file):
     logging.info(f"{YELLOW}Creating config file: {config_file}")
     config = configparser.ConfigParser()
-    config["DEFAULT"]["email"] = input("Enter your email:\n- ")
-    password = input("Enter your password\n- ")
+    config["DEFAULT"]["email"] = input("adrianmexmhmusic1@gmail.com")
+    password = input("Mexico_HiRes_2021_Adrian83")
     config["DEFAULT"]["password"] = hashlib.md5(password.encode("utf-8")).hexdigest()
     config["DEFAULT"]["default_folder"] = (
-        input("Folder for downloads (leave empty for default 'Qobuz Downloads')\n- ")
-        or "Qobuz Downloads"
+        input("Folder for downloads (leave empty for default '/data/data/com.termux/files/home/storage/Qobuz')\n- ")
+        or "/data/data/com.termux/files/home/storage/Qobuz"
     )
     config["DEFAULT"]["default_quality"] = (
         input(
             "Download quality (5, 6, 7, 27) "
             "[320, LOSSLESS, 24B <96KHZ, 24B >96KHZ]"
-            "\n(leave empty for default '6')\n- "
+            "\n(leave empty for default '27')\n- "
         )
-        or "6"
+        or "27"
     )
     config["DEFAULT"]["default_limit"] = "20"
     config["DEFAULT"]["no_m3u"] = "false"
