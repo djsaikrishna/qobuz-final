@@ -18,6 +18,6 @@
   "description":"KEEP IT HEROKU!!!!!!!",
   "required":true},
   "BOT_TOKEN":{
-  "description": "Your @BotFather BOT Token.",
+  "description": "1962304265:AAENjlE4pIrPMUSATTsmmsxIW_NbAwdntYY",
   "required":true}},
   "buildpacks": [{"url": "heroku/python"}]}  
