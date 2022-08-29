@@ -12,7 +12,7 @@ requirements = read_file("requirements.txt").strip().split()
 
 
 setup(
-    name=qobuz-dl,
+    name=pkg_name,
     version="0.9.9.7",
     author="adrianmejiam",
     author_email="adrianmejiam@gmail.com",
